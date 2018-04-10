@@ -33,4 +33,8 @@
     <string name="Q5C3">continue</string>
     <string name="Q5C4">return</string>
 
+    <string name="allCorrectAns">Congratulations!! You Got All The Right Answers!</string>
+    <string name="reset">Quiz Reset!</string>
+    <string name="share">Share using</string>
+
 </resources>

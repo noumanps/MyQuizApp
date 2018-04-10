@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         Question4();
         Question5();
         if (wrongQuestions == 0){
-            Toast.makeText(getApplicationContext(), "Congratulations!! You Got All The Right Answers!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), R.string.allCorrectAns, Toast.LENGTH_LONG).show();
         }
         else {
             Toast.makeText(getApplicationContext(), "You Got "+correctQuestions+ " Right Answers & "+wrongQuestions+ " Wrong Answers. You Can Retake the Quiz By Clicking Reset Button!", Toast.LENGTH_LONG).show();
@@ -138,6 +138,6 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBoxQ54 = (CheckBox) findViewById(R.id.Q5CheckBox4);
         checkBoxQ54.setChecked(false);
 
-        Toast.makeText(getApplicationContext(), "Quiz Reset!", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), R.string.reset, Toast.LENGTH_LONG).show();
     }
 }
