@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/questions_text_style"
+            android:text="@string/Q1" />
+
+        <EditText
+            android:id="@+id/Q1_EditText"
+            style="@style/editText_style" />
+
+        <TextView
+            style="@style/questions_text_style"
+            android:text="@string/Q2" />
+
+        <RadioGroup
+            android:id="@+id/Q2RadioGroupId"
+            style="@style/radioGroup_style">
+
+            <RadioButton
+                android:id="@+id/Q2Option1"
+                style="@style/radioButton_style"
+                android:text="@string/Q2O1" />
+
+            <RadioButton
+                android:id="@+id/Q2Option2"
+                style="@style/radioButton_style"
+                android:text="@string/Q2O2" />
+
+            <RadioButton
+                android:id="@+id/Q2Option3"
+                style="@style/radioButton_style"
+                android:text="@string/Q2O3" />
+
+            <RadioButton
+                android:id="@+id/Q2Option4"
+                style="@style/radioButton_style"
+                android:text="@string/Q2O4" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/questions_text_style"
+            android:text="@string/Q3" />
+
+        <CheckBox
+            android:id="@+id/Q3CheckBox1"
+            style="@style/checkbox_style"
+            android:text="@string/Q3C1" />
+
+        <CheckBox
+            android:id="@+id/Q3CheckBox2"
+            style="@style/checkbox_style"
+            android:text="@string/Q3C2" />
+
+        <CheckBox
+            android:id="@+id/Q3CheckBox3"
+            style="@style/checkbox_style"
+            android:text="@string/Q3C3" />
+
+        <CheckBox
+            android:id="@+id/Q3CheckBox4"
+            style="@style/checkbox_style"
+            android:text="@string/Q3C4" />
+
+        <TextView
+            style="@style/questions_text_style"
+            android:text="@string/Q4" />
+
+        <RadioGroup
+            android:id="@+id/Q4RadioGroupId"
+            style="@style/radioGroup_style">
+
+            <RadioButton
+                android:id="@+id/Q4Option1"
+                style="@style/radioButton_style"
+                android:text="@string/Q4O1" />
+
+            <RadioButton
+                android:id="@+id/Q4Option2"
+                style="@style/radioButton_style"
+                android:text="@string/Q4O2" />
+
+            <RadioButton
+                android:id="@+id/Q4Option3"
+                style="@style/radioButton_style"
+                android:text="@string/Q4O3" />
+
+            <RadioButton
+                android:id="@+id/Q4Option4"
+                style="@style/radioButton_style"
+                android:text="@string/Q4O4" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/questions_text_style"
+            android:text="@string/Q5" />
+
+        <CheckBox
+            android:id="@+id/Q5CheckBox1"
+            style="@style/checkbox_style"
+            android:text="@string/Q5C1" />
+
+        <CheckBox
+            android:id="@+id/Q5CheckBox2"
+            style="@style/checkbox_style"
+            android:text="@string/Q5C2" />
+
+        <CheckBox
+            android:id="@+id/Q5CheckBox3"
+            style="@style/checkbox_style"
+            android:text="@string/Q5C3" />
+
+        <CheckBox
+            android:id="@+id/Q5CheckBox4"
+            style="@style/checkbox_style"
+            android:text="@string/Q5C4" />
+
+        <Button
+            android:id="@+id/submit_Button"
+            style="@style/button_style"
+            android:text="Submit Quiz"
+            android:onClick="submitQuiz"/>
+
+        <Button
+            android:id="@+id/share_Button"
+            style="@style/button_style"
+            android:text="Share Result"
+            android:onClick="shareResult"/>
+
+        <Button
+            android:id="@+id/reset_Button"
+            style="@style/button_style"
+            android:text="Reset Quiz"
+            android:onClick="reset"/>
+    </LinearLayout>
+</ScrollView>

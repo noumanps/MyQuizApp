@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My QuizApp</string>
+
+    <!-- Questions -->
+    <string name="Q1">Q1: How many primitive data types are there in Java? </string>
+    <string name="Q2">Q2: What is true about break? </string>
+    <string name="Q3">Q3: Which of the following is a(are) decision making statement?</string>
+    <string name="Q4">Q4: Automatic type conversion in Java takes place when</string>
+    <string name="Q5">Q5: Which of the following is an(are) valid jump statement?</string>
+
+    <!-- Options -->
+    <!-- Q2 Options -->
+    <string name="Q2O1">Break stops the execution of entire program.</string>
+    <string name="Q2O2">Break halts the execution and forces the control out of the loop.</string>
+    <string name="Q2O3">Break forces the control out of the loop and starts the execution of next iteration.</string>
+    <string name="Q2O4">Break halts the execution of the loop for certain time frame</string>
+
+    <!-- Q3 Options -->
+    <string name="Q3C1">if</string>
+    <string name="Q3C2">if - else</string>
+    <string name="Q3C3">switch</string>
+    <string name="Q3C4">do - while</string>
+
+    <!-- Q4 Options -->
+    <string name="Q4O1">Two type are compatible and size of destination type is shorter than source type.</string>
+    <string name="Q4O2">Two type are compatible and size of destination type is equal of source type.</string>
+    <string name="Q4O3">Two type are compatible and size of destination type is larger than source type.</string>
+    <string name="Q4O4">All of the above</string>
+
+    <!-- Q5 Options -->
+    <string name="Q5C1">break</string>
+    <string name="Q5C2">goto</string>
+    <string name="Q5C3">continue</string>
+    <string name="Q5C4">return</string>
+
+</resources>
