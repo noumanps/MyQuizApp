@@ -129,19 +129,19 @@
         <Button
             android:id="@+id/submit_Button"
             style="@style/button_style"
-            android:text="Submit Quiz"
-            android:onClick="submitQuiz"/>
+            android:onClick="submitQuiz"
+            android:text="Submit Quiz" />
 
         <Button
             android:id="@+id/share_Button"
             style="@style/button_style"
-            android:text="Share Result"
-            android:onClick="shareResult"/>
+            android:onClick="shareResult"
+            android:text="Share Result" />
 
         <Button
             android:id="@+id/reset_Button"
             style="@style/button_style"
-            android:text="Reset Quiz"
-            android:onClick="reset"/>
+            android:onClick="reset"
+            android:text="Reset Quiz" />
     </LinearLayout>
 </ScrollView>

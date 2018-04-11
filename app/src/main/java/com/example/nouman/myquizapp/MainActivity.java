@@ -11,10 +11,28 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Instance variables for view elements
+    private EditText editTextQ1 = null;
+    private RadioGroup radioGroupQ2, radioGroupQ4 = null;
+    private CheckBox checkBoxQ31, checkBoxQ32, checkBoxQ33, checkBoxQ34 = null;
+    private CheckBox checkBoxQ51, checkBoxQ52, checkBoxQ53, checkBoxQ54 = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        editTextQ1 = (EditText) findViewById(R.id.Q1_EditText);
+        radioGroupQ2 = (RadioGroup) findViewById(R.id.Q2RadioGroupId);
+        checkBoxQ31 = (CheckBox) findViewById(R.id.Q3CheckBox1);
+        checkBoxQ32 = (CheckBox) findViewById(R.id.Q3CheckBox2);
+        checkBoxQ33 = (CheckBox) findViewById(R.id.Q3CheckBox3);
+        checkBoxQ34 = (CheckBox) findViewById(R.id.Q3CheckBox4);
+        radioGroupQ4 = (RadioGroup) findViewById(R.id.Q4RadioGroupId);
+        checkBoxQ51 = (CheckBox) findViewById(R.id.Q5CheckBox1);
+        checkBoxQ52 = (CheckBox) findViewById(R.id.Q5CheckBox2);
+        checkBoxQ53 = (CheckBox) findViewById(R.id.Q5CheckBox3);
+        checkBoxQ54 = (CheckBox) findViewById(R.id.Q5CheckBox4);
     }
 
     String Q1_Solution1 = "8";                  //Question 1 Solution if user enters 8
@@ -25,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     int wrongQuestions = 0;                     //Wrong Ans Count
 
     private void Question1(){
-        EditText editTextQ1 = (EditText) findViewById(R.id.Q1_EditText);
         if (editTextQ1.getText().toString().equalsIgnoreCase(Q1_Solution1) ||
                 editTextQ1.getText().toString().equalsIgnoreCase(Q1_Solution2)){
             correctQuestions = correctQuestions + 1;
@@ -36,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Question2(){
-        RadioGroup radioGroupQ2 = (RadioGroup) findViewById(R.id.Q2RadioGroupId);
         if (radioGroupQ2.getCheckedRadioButtonId() == Q2_Solution) {
             correctQuestions = correctQuestions + 1;
         }
@@ -46,11 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Question3(){
-        CheckBox checkBox1 = (CheckBox) findViewById(R.id.Q3CheckBox1);
-        CheckBox checkBox2 = (CheckBox) findViewById(R.id.Q3CheckBox2);
-        CheckBox checkBox3 = (CheckBox) findViewById(R.id.Q3CheckBox3);
-        CheckBox checkBox4 = (CheckBox) findViewById(R.id.Q3CheckBox4);
-        if (checkBox1.isChecked() && checkBox2.isChecked() && checkBox3.isChecked() && !checkBox4.isChecked()){
+        if (checkBoxQ31.isChecked() && checkBoxQ32.isChecked() && checkBoxQ33.isChecked() && !checkBoxQ34.isChecked()){
             correctQuestions = correctQuestions + 1;
         }
         else{
@@ -59,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Question4(){
-        RadioGroup radioGroupQ4 = (RadioGroup) findViewById(R.id.Q4RadioGroupId);
         if (radioGroupQ4.getCheckedRadioButtonId() == Q4_Solution) {
             correctQuestions = correctQuestions + 1;
         }
@@ -69,11 +80,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void Question5(){
-        CheckBox checkBox1 = (CheckBox) findViewById(R.id.Q5CheckBox1);
-        CheckBox checkBox2 = (CheckBox) findViewById(R.id.Q5CheckBox2);
-        CheckBox checkBox3 = (CheckBox) findViewById(R.id.Q5CheckBox3);
-        CheckBox checkBox4 = (CheckBox) findViewById(R.id.Q5CheckBox4);
-        if (checkBox1.isChecked() && !checkBox2.isChecked() && checkBox3.isChecked() && checkBox4.isChecked()){
+        if (checkBoxQ51.isChecked() && !checkBoxQ52.isChecked() && checkBoxQ53.isChecked() && checkBoxQ54.isChecked()){
             correctQuestions = correctQuestions + 1;
         }
         else{
@@ -105,37 +112,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void reset(View view) {
-        EditText editTextQ1 = (EditText) findViewById(R.id.Q1_EditText);
         editTextQ1.setText("");
-
-        RadioGroup radioGroupQ2 = (RadioGroup) findViewById(R.id.Q2RadioGroupId);
         radioGroupQ2.clearCheck();
-
-        CheckBox checkBoxQ31 = (CheckBox) findViewById(R.id.Q3CheckBox1);
         checkBoxQ31.setChecked(false);
-
-        CheckBox checkBoxQ32 = (CheckBox) findViewById(R.id.Q3CheckBox2);
         checkBoxQ32.setChecked(false);
-
-        CheckBox checkBoxQ33 = (CheckBox) findViewById(R.id.Q3CheckBox3);
         checkBoxQ33.setChecked(false);
-
-        CheckBox checkBoxQ34 = (CheckBox) findViewById(R.id.Q3CheckBox4);
         checkBoxQ34.setChecked(false);
-
-        RadioGroup radioGroupQ4 = (RadioGroup) findViewById(R.id.Q4RadioGroupId);
         radioGroupQ4.clearCheck();
-
-        CheckBox checkBoxQ51 = (CheckBox) findViewById(R.id.Q5CheckBox1);
         checkBoxQ51.setChecked(false);
-
-        CheckBox checkBoxQ52 = (CheckBox) findViewById(R.id.Q5CheckBox2);
         checkBoxQ52.setChecked(false);
-
-        CheckBox checkBoxQ53 = (CheckBox) findViewById(R.id.Q5CheckBox3);
         checkBoxQ53.setChecked(false);
-
-        CheckBox checkBoxQ54 = (CheckBox) findViewById(R.id.Q5CheckBox4);
         checkBoxQ54.setChecked(false);
 
         Toast.makeText(getApplicationContext(), R.string.reset, Toast.LENGTH_LONG).show();
