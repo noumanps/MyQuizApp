@@ -34,7 +34,9 @@
     <string name="Q5C4">return</string>
 
     <string name="allCorrectAns">Congratulations!! You Got All The Right Answers!</string>
+    <string name="quizResultText">You Got %d Right Answers and %d Wrong Answers. You Can Retake the Quiz By Clicking Reset Button!</string>
+    <string name="shareResultText">Hey I Got %d Right Answers and %d Wrong Answers of the Quiz!.</string>
     <string name="reset">Quiz Reset!</string>
-    <string name="share">Share using</string>
+    <string name="shareResult">Share using</string>
 
 </resources>

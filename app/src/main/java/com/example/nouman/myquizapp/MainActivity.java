@@ -100,15 +100,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), R.string.allCorrectAns, Toast.LENGTH_LONG).show();
         }
         else {
-            Toast.makeText(getApplicationContext(), "You Got "+correctQuestions+ " Right Answers & "+wrongQuestions+ " Wrong Answers. You Can Retake the Quiz By Clicking Reset Button!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), String.format(getString(R.string.quizResultText), correctQuestions, wrongQuestions), Toast.LENGTH_LONG).show();
         }
     }
 
     public void shareResult(View view) {
         Intent share = new Intent(Intent.ACTION_SEND);
         share.setType("text/plain");
-        share.putExtra(Intent.EXTRA_TEXT, "Hey I Got "+correctQuestions+ " Right Answers & "+wrongQuestions+ " Wrong Answers of the Quiz!.");
-        startActivity(Intent.createChooser(share, "Share using"));
+        share.putExtra(Intent.EXTRA_TEXT, String.format(getString(R.string.shareResultText), correctQuestions, wrongQuestions));
+        startActivity(Intent.createChooser(share, String.format(getString(R.string.shareResult))));
     }
 
     public void reset(View view) {
