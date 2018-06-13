@@ -22,17 +22,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextQ1 = (EditText) findViewById(R.id.Q1_EditText);
-        radioGroupQ2 = (RadioGroup) findViewById(R.id.Q2RadioGroupId);
-        checkBoxQ31 = (CheckBox) findViewById(R.id.Q3CheckBox1);
-        checkBoxQ32 = (CheckBox) findViewById(R.id.Q3CheckBox2);
-        checkBoxQ33 = (CheckBox) findViewById(R.id.Q3CheckBox3);
-        checkBoxQ34 = (CheckBox) findViewById(R.id.Q3CheckBox4);
-        radioGroupQ4 = (RadioGroup) findViewById(R.id.Q4RadioGroupId);
-        checkBoxQ51 = (CheckBox) findViewById(R.id.Q5CheckBox1);
-        checkBoxQ52 = (CheckBox) findViewById(R.id.Q5CheckBox2);
-        checkBoxQ53 = (CheckBox) findViewById(R.id.Q5CheckBox3);
-        checkBoxQ54 = (CheckBox) findViewById(R.id.Q5CheckBox4);
+        editTextQ1 = findViewById(R.id.Q1_EditText);
+        radioGroupQ2 = findViewById(R.id.Q2RadioGroupId);
+        checkBoxQ31 = findViewById(R.id.Q3CheckBox1);
+        checkBoxQ32 = findViewById(R.id.Q3CheckBox2);
+        checkBoxQ33 = findViewById(R.id.Q3CheckBox3);
+        checkBoxQ34 = findViewById(R.id.Q3CheckBox4);
+        radioGroupQ4 = findViewById(R.id.Q4RadioGroupId);
+        checkBoxQ51 = findViewById(R.id.Q5CheckBox1);
+        checkBoxQ52 = findViewById(R.id.Q5CheckBox2);
+        checkBoxQ53 = findViewById(R.id.Q5CheckBox3);
+        checkBoxQ54 = findViewById(R.id.Q5CheckBox4);
     }
 
     String Q1_Solution1 = "8";                  //Question 1 Solution if user enters 8
